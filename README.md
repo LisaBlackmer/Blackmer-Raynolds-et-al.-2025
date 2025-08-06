@@ -1,7 +1,7 @@
 # Blackmer-Raynolds et al., 2025 Code Repository
 
 This GitHub repository contains the code for the paper titled: "Indigenous gut microbes modulate neural cell state and neurodegenerative disease
-susceptibility." For a detailed description of the methods and results, please refer to the [paper](#). *Note: The paper is currently under review and the link will be updated once it is published.*
+susceptibility." For a detailed description of the methods and results, please refer to the [paper](#). *Note: The paper is currently under review and the links will be updated once it is published.*
 
 While this code is meant to offer insights into our study methods and approach, it is not expected to function directly out-of-the-box for reproduction of our results. Should you have any questions or want further clarification, feel free to reach out.
 
@@ -16,10 +16,10 @@ The data used in this study is available through the Gene Expression Omnibus (GE
 ## SnRNA-seq Data Processing:
 
 1. **Alignment:**  
-    Alignment to the mouse reference genome (GRCm39) was performed using the Cell Ranger pipeline (version 4.0.10, 10x Genomics). Ambient RNA was removed using Cellbender (version 0.3.0) with the shell script `Cellranger_cellbender.sh`. The dependencies for this step are listed in `Cellranger_cellbender_dependencies.txt`.
+    Alignment to the mouse reference genome (GRCm39) was performed using the Cell Ranger pipeline. Ambient RNA was removed using Cellbender with the shell script `Cellranger_cellbender.sh`. The dependencies for this step are listed in `Cellranger_cellbender_dependencies.txt`.
 
 2. **R Packages:**  
-    R packages can be found and installed using the renv package manager with the files located in the `renv` folder.
+    R packages can be found and installed using the renv package manager with the files located in the `renv` folder located within the associated `R Scripts` folder.
 
 3. **Data Integration & Clustering:**  
     The data was imported into R, integrated, and clustered with the script `Make_seurat_object.R`.
@@ -36,7 +36,7 @@ The data used in this study is available through the Gene Expression Omnibus (GE
 ## Bulk RNA-seq Data Processing (Mono-Colonized & 5xFAD):
 
 1. **Alignment:**  
-    Alignment to the mouse reference genome (GRCm39) was performed using Kallisto (version 0.44.0) with the script `kallisto.sh`. The dependencies for this step are listed in `kallisto_dependencies.txt`.
+    Alignment to the mouse reference genome (GRCm39) was performed using Kallisto with the script `kallisto.sh`. The dependencies for this step are listed in `kallisto_dependencies.txt`.
 
 2. **R Packages:**  
     R packages can be found and installed using the renv package manager with the files located in the `renv` folder.
